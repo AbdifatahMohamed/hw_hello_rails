@@ -1,8 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Movies 1</h1>
+<h1>Movies</h1>
 
 <table>
+  <tr>
+    <th>Title</th>
+    <th>Rating</th>
+    <th>Release Date</th>
+  </tr>
   <tr id="movies">
     <% @movies.each do |movie| %>
       <%= render movie %>
